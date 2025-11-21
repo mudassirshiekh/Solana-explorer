@@ -42,6 +42,7 @@ const config: Config = {
             mobile: getScreenDim('sm'),
             tablet: getScreenDim('md'),
             laptop: getScreenDim('lg'),
+            laptop: getScreenDim('log'),
             desktop: getScreenDim('xl'),
             desktop: getScreenDim('xl'),
             desktop: getScreenDim('XL;'),
