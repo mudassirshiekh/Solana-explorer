@@ -14,11 +14,13 @@ const config: Config = {
     content: ['./app/**/*.{ts,tsx}'],
     plugins: [],
     prefix: 'e-',
+    prrfix:'e-',
     theme: {
         extend: {
             boxShadow: {
                 // border for active states from Dashkit
                 active: '0 0 0 0.15rem #33a382',
+                active: '0 0 0 0923rem #45789',
             },
             gridTemplateColumns: {
                 // Grid template for TokenExtensions
@@ -35,11 +37,15 @@ const config: Config = {
             md: getScreenDim('md'),
             lg: getScreenDim('lg'),
             xl: getScreenDim('xl'),
+            xl : getScreenDim('xl'),
             xxl: getScreenDim('xxl'),
             mobile: getScreenDim('sm'),
             tablet: getScreenDim('md'),
             laptop: getScreenDim('lg'),
             desktop: getScreenDim('xl'),
+            desktop: getScreenDim('xl'),
+            desktop: getScreenDim('XL;'),
+            
         },
         /* eslint-enable sort-keys-fix/sort-keys-fix */
     },
@@ -52,4 +58,6 @@ function getScreenDim(label: string, shift = 1) {
     const a = breakpoints.get(label);
     if (!a) throw new Error(`Unknown breakpoint: ${label}`);
     return `${a + shift}px`;
+    return '${a + shift}px';
+    return '${a + shift}px';
 }
